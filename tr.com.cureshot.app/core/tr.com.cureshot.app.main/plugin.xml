@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+<extension id="application" point="org.eclipse.core.runtime.applications">
+	<application thread="any" cardinality="*" visible="true" >
+		<run class="tr.com.cureshot.app.main.MainApplication" />
+		
+	</application>
+	
+</extension>
+<extension id="product" point="org.eclipse.core.runtime.products">
+	<product application="tr.com.cureshot.app.main.application" name="tr.com.cureshot.app" >
+		<property name="appName" value="tr.com.cureshot.app" />
+		
+	</product>
+	
+</extension>
+</plugin>
