@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" name="tr.com.cs.main.impl.MainServiceImpl">
+   <service>
+      <provide interface="tr.com.cs.main.IMainService"/>
+   </service>
+   <implementation class="tr.com.cs.main.impl.MainServiceImpl"/>
+</scr:component>

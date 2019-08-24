@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>tr.com.cs</groupId>
+	<artifactId>tr.com.cs.root</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>tr.com.cs</groupId>
+		<artifactId>tr.com.cs.configuration</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>./releng/tr.com.cs.configuration</relativePath>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>11.0.2</version>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>core</module>
+		<module>features</module>
+		<module>products</module>
+		<module>releng</module>
+		<module>tests</module>
+	</modules>
+</project>
