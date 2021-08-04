@@ -9,8 +9,8 @@
 	
 </extension>
 <extension id="product" point="org.eclipse.core.runtime.products">
-	<product application="tr.com.cs.application" name="tr.com.cs.product" >
-		<property name="appName" value="tr.com.cs.product" />
+	<product application="tr.com.cs.main.application" name="tr.com.cs.app" >
+		<property name="appName" value="tr.com.cs.app" />
 		
 	</product>
 	
