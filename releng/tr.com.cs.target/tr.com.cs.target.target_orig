@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="tr.com.cs.target">
+	<locations>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/releases/2019-06/201906191000/"/>
+			<unit id="org.eclipse.fx.runtime.min.feature.feature.group" version="3.5.0.201902220600"/>
+		</location>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="https://download.eclipse.org/efxclipse/runtime-released/3.6.0/site/"/>
+			<unit id="org.eclipse.fx.code.target.feature.feature.group" version="3.6.0.201907240201"/>
+			<unit id="org.eclipse.fx.core.feature.feature.group" version="3.6.0.201907240201"/>
+			<unit id="org.eclipse.fx.nl.feature.feature.group" version="3.6.0.201907240201"/>
+			<unit id="org.eclipse.fx.runtime.feature.feature.group" version="3.6.0.201907240201"/>
+			<unit id="org.eclipse.fx.slf4j.target.feature.feature.group" version="3.6.0.201907230201"/>
+			<unit id="org.eclipse.fx.target.feature.feature.group" version="3.6.0.201907240201"/>
+			<unit id="org.eclipse.fx.target.rcp.feature.feature.group" version="3.6.0.201907240201"/>
+			<unit id="org.eclipse.fx.target.rcp4.feature.feature.group" version="3.6.0.201907240201"/>
+		</location>
+	</locations>
+</target>
