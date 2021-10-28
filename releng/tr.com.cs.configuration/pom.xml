@@ -10,8 +10,13 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho.version>1.4.0</tycho.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+		
+		<tycho.version>1.7.0</tycho.version>
+		
 		<!-- Skip the deployment here, submodules can override this property -->
 		<!--maven.deploy.skip>true</maven.deploy.skip -->
 	</properties>
@@ -20,20 +25,22 @@
 		<plugins>
 			<!-- Skip the install, since we do not need the artifacts in our local 
 				mvn repo -->
-			<plugin>
+			<!-- plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-install-plugin</artifactId>
 				<version>2.5.2</version>
 				<configuration>
 					<skip>true</skip>
 				</configuration>
-			</plugin>
+			</plugin -->
+			
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tycho.version}</version>
 				<extensions>true</extensions>
 			</plugin>
+			
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
@@ -48,25 +55,25 @@
 					</target>
 					<environments>
 						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
 							<os>win32</os>
 							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<!-- environment>
+							<os>linux</os>
+							<ws>gtk</ws>
 							<arch>x86_64</arch>
 						</environment>
 						<environment>
 							<os>macosx</os>
 							<ws>cocoa</ws>
 							<arch>x86_64</arch>
-						</environment>
+						</environment -->
 					</environments>
 				</configuration>
 			</plugin>
 			<!-- enable source feature generation -->
-			<!--plugin> <groupId>org.eclipse.tycho.extras</groupId> <artifactId>tycho-source-feature-plugin</artifactId> 
+			<!-- plugin> <groupId>org.eclipse.tycho.extras</groupId> <artifactId>tycho-source-feature-plugin</artifactId> 
 				<version>${tycho.version}</version> <executions> <execution> <id>source-feature</id> 
 				<phase>package</phase> <goals> <goal>source-feature</goal> </goals> </execution> 
 				</executions> </plugin> <plugin> <groupId>org.eclipse.tycho</groupId> <artifactId>tycho-source-plugin</artifactId> 
@@ -85,7 +92,7 @@
 		</plugins>
 
 		<!-- defines the default settings for the used plugins -->
-		<pluginManagement>
+		<!-- pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.eclipse.tycho</groupId>
@@ -156,7 +163,7 @@
 				</plugin>
 				
 			</plugins>
-		</pluginManagement>
+		</pluginManagement -->
 	</build>
 </project>
 
