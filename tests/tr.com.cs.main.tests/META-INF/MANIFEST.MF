@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MainTests
+Bundle-SymbolicName: tr.com.cs.main.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kürşat Özer
+Fragment-Host: tr.com.cs.main;bundle-version="1.0.0"
+Automatic-Module-Name: tr.com.cs.main.tests
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.junit;version="4.12.0",
+ org.junit.internal.runners.model;version="4.12.0",
+ org.junit.jupiter.api;version="5.5.1",
+ org.junit.jupiter.api.extension;version="5.5.1",
+ org.junit.platform.commons.support;version="1.5.1",
+ org.junit.platform.engine;version="1.5.1",
+ org.junit.platform.engine.discovery;version="1.5.1",
+ org.junit.platform.launcher;version="1.5.1",
+ org.junit.platform.launcher.core;version="1.5.1",
+ org.junit.platform.launcher.listeners;version="1.5.1",
+ org.junit.runner;version="4.12.0",
+ org.junit.runners;version="4.12.0"
+Require-Bundle: org.junit;bundle-version="4.12.0",
+ org.junit.jupiter.api;bundle-version="5.5.1"
