@@ -3,6 +3,7 @@
 
 <product name="tr.com.cs.app" uid="tr.com.cs.app" id="tr.com.cs.main.product" application="tr.com.cs.main.application" version="1.0.0" useFeatures="true" includeLaunchers="false">
 
+
    <configIni use="default">
    </configIni>
 
@@ -15,11 +16,13 @@
 
    <windowImages/>
 
+
    <launcher name="CsApp">
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
    </vm>
@@ -39,5 +42,12 @@
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
    </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>

@@ -3,7 +3,7 @@
 <plugin>
 <extension id="application" point="org.eclipse.core.runtime.applications">
 	<application thread="any" cardinality="*" visible="true" >
-		<run class="tr.com.cs.main.app.MainService" />
+		<run class="tr.com.cs.main.app.MainApplication" />
 		
 	</application>
 	

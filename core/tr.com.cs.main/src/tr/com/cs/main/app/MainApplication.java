@@ -9,7 +9,7 @@ import org.eclipse.equinox.app.IApplicationContext;
 
 import org.eclipse.fx.osgi.util.AbstractJFXApplication;
 
-public class MainService extends AbstractJFXApplication {
+public class MainApplication extends AbstractJFXApplication {
 	protected void jfxStart(IApplicationContext applicationContext, Application jfxApplication, Stage primaryStage) {
 		Scene s = new Scene(new Label("Hello World"));
 		primaryStage.setScene(s);

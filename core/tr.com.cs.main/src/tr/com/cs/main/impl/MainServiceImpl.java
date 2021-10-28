@@ -6,7 +6,7 @@ import org.osgi.service.component.annotations.Deactivate;
 
 import tr.com.cs.main.IMainService;
 
-@Component
+@Component(immediate = true)
 public class MainServiceImpl implements IMainService {
 
 	@Activate
