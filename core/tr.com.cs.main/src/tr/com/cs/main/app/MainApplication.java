@@ -11,14 +11,6 @@ import javafx.stage.Stage;
 import tr.com.cs.main.IMainService;
 
 public class MainApplication extends AbstractJFXApplication {
-//	protected void jfxStart(IApplicationContext applicationContext, Application jfxApplication, Stage primaryStage) {
-//		Scene s = new Scene(new Label("Hello World"));
-//		primaryStage.setScene(s);
-//		primaryStage.setWidth(300);
-//		primaryStage.setHeight(400);
-//		primaryStage.setTitle("Hello World");
-//		primaryStage.show();
-//	}
 
 	private IMainService mainService;
 

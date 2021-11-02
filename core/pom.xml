@@ -17,5 +17,6 @@
 	<modules>
 		<module>tr.com.cs.main</module>
 		<module>tr.com.cs.screen.b</module>
+		<module>tr.com.cs.screen.b.lang</module>
 	</modules>
 </project>
