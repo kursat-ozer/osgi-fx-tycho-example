@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ScreenBLang
+Bundle-SymbolicName: tr.com.cs.screen.b.lang
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kürşat Özer
+Fragment-Host: tr.com.cs.screen.b;bundle-version="1.0.0"
+Automatic-Module-Name: tr.com.cs.screen.b.lang
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
