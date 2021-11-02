@@ -4,7 +4,7 @@
 <booleanAttribute key="append.args" value="true"/>
 <booleanAttribute key="askclear" value="true"/>
 <booleanAttribute key="automaticAdd" value="false"/>
-<booleanAttribute key="automaticValidate" value="false"/>
+<booleanAttribute key="automaticValidate" value="true"/>
 <stringAttribute key="bootstrap" value=""/>
 <stringAttribute key="checked" value="[NONE]"/>
 <booleanAttribute key="clearConfig" value="false"/>
@@ -12,21 +12,79 @@
 <booleanAttribute key="clearwslog" value="false"/>
 <stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/tr.com.cs.app.product"/>
 <booleanAttribute key="default" value="false"/>
+<setAttribute key="deselected_workspace_bundles"/>
 <stringAttribute key="featureDefaultLocation" value="workspace"/>
 <stringAttribute key="featurePluginResolution" value="workspace"/>
 <booleanAttribute key="includeOptional" value="true"/>
 <stringAttribute key="location" value="${workspace_loc}/../runtime-tr.com.cs.main.app.product"/>
+<stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="${workspace_loc:external/logs/out.log}"/>
 <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-nl ${target.nl} -consoleLog -nosplash"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog -nosplash -console"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dosgi.framework.extensions=org.eclipse.fx.osgi"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dosgi.framework.extensions=org.eclipse.fx.osgi -Dorg.osgi.framework.bundle.parent=ext -Duser.language=tr"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:external/cbs}"/>
 <stringAttribute key="pde.version" value="3.3"/>
 <stringAttribute key="product" value="tr.com.cs.main.product"/>
 <stringAttribute key="productFile" value="/tr.com.cs.main.app.product/tr.com.cs.main.app.product.product"/>
+<booleanAttribute key="restart" value="true"/>
 <setAttribute key="selected_features"/>
+<setAttribute key="selected_target_bundles">
+<setEntry value="com.google.guava*21.0.0.v20170206-1425@default:default"/>
+<setEntry value="com.google.guava*27.1.0.v20190517-1946@default:default"/>
+<setEntry value="com.ibm.icu@default:default"/>
+<setEntry value="com.sun.jna@default:default"/>
+<setEntry value="javax.activation@default:default"/>
+<setEntry value="javax.inject@default:default"/>
+<setEntry value="javax.xml.bind@default:default"/>
+<setEntry value="javax.xml.stream@default:default"/>
+<setEntry value="javax.xml@default:default"/>
+<setEntry value="org.apache.commons.codec@default:default"/>
+<setEntry value="org.apache.commons.collections@default:default"/>
+<setEntry value="org.apache.commons.lang3@default:default"/>
+<setEntry value="org.apache.commons.lang@default:default"/>
+<setEntry value="org.apache.felix.gogo.command@default:default"/>
+<setEntry value="org.apache.felix.gogo.runtime@default:default"/>
+<setEntry value="org.apache.felix.gogo.shell@default:default"/>
+<setEntry value="org.apache.felix.scr@2:true"/>
+<setEntry value="org.apache.log4j@default:default"/>
+<setEntry value="org.apache.poi.ooxml.schemas@default:default"/>
+<setEntry value="org.apache.poi.ooxml@default:default"/>
+<setEntry value="org.apache.poi@default:default"/>
+<setEntry value="org.apache.xmlbeans@default:default"/>
+<setEntry value="org.dom4j@default:default"/>
+<setEntry value="org.eclipse.core.contenttype@default:default"/>
+<setEntry value="org.eclipse.core.databinding.observable@default:default"/>
+<setEntry value="org.eclipse.core.databinding.property@default:default"/>
+<setEntry value="org.eclipse.core.databinding@default:default"/>
+<setEntry value="org.eclipse.core.jobs@default:default"/>
+<setEntry value="org.eclipse.core.runtime@default:true"/>
+<setEntry value="org.eclipse.e4.core.contexts@default:default"/>
+<setEntry value="org.eclipse.e4.core.di.annotations@default:default"/>
+<setEntry value="org.eclipse.e4.core.di@default:default"/>
+<setEntry value="org.eclipse.e4.core.services@default:default"/>
+<setEntry value="org.eclipse.equinox.app@default:default"/>
+<setEntry value="org.eclipse.equinox.common@2:true"/>
+<setEntry value="org.eclipse.equinox.console@default:default"/>
+<setEntry value="org.eclipse.equinox.event@2:true"/>
+<setEntry value="org.eclipse.equinox.preferences@default:default"/>
+<setEntry value="org.eclipse.equinox.registry@default:default"/>
+<setEntry value="org.eclipse.fx.core.databinding@default:default"/>
+<setEntry value="org.eclipse.fx.core@default:default"/>
+<setEntry value="org.eclipse.fx.osgi*3.6.0.201907240103@default:false"/>
+<setEntry value="org.eclipse.fx.osgi.util@default:default"/>
+<setEntry value="org.eclipse.fx.ui.controls@default:default"/>
+<setEntry value="org.eclipse.fx.ui.databinding@default:default"/>
+<setEntry value="org.eclipse.fx.ui.panes@default:default"/>
+<setEntry value="org.eclipse.osgi.services@default:default"/>
+<setEntry value="org.eclipse.osgi.util@default:default"/>
+<setEntry value="org.eclipse.osgi@-1:true"/>
+</setAttribute>
+<setAttribute key="selected_workspace_bundles">
+<setEntry value="tr.com.cs.main@default:default"/>
+</setAttribute>
 <booleanAttribute key="show_selected_only" value="false"/>
 <booleanAttribute key="tracing" value="false"/>
-<booleanAttribute key="useCustomFeatures" value="true"/>
+<booleanAttribute key="useCustomFeatures" value="false"/>
 <booleanAttribute key="useDefaultConfig" value="true"/>
 <booleanAttribute key="useDefaultConfigArea" value="true"/>
 <booleanAttribute key="useProduct" value="true"/>
