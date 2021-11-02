@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" name="tr.com.cs.main.impl.MainServiceImpl">
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" activate="activate" deactivate="deactivate" immediate="true" name="tr.com.cs.main.impl.MainServiceImpl">
    <service>
       <provide interface="tr.com.cs.main.IMainService"/>
    </service>
+   <reference cardinality="1..1" field="screenBService" interface="tr.com.cs.screen.b.IScreenB" name="screenBService"/>
    <implementation class="tr.com.cs.main.impl.MainServiceImpl"/>
 </scr:component>
